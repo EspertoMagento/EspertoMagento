@@ -1,5 +1,5 @@
 # EspertoMagento
-Questo script permette di ricercare all'interno di un'installazione di Magento una particolare estensione e recuperare tutta la lista dei file
+Questo script permette di ricercare all'interno di un'installazione di Magento una particolare estensione e recuperare tutta la lista dei file. Inoltre permette di copiare i file e le directory trovate all'interno di una cartella.
 
 #1- Installazione
 - Copiare il file .sh nella root di Magento
