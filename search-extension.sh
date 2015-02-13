@@ -1,17 +1,19 @@
 #!/bin/bash
 
-echo -n "----------------"
-echo -n "LIST FILES FOUND"
-echo -n "----------------"
+echo -e "\n----------------"
+echo -e "LIST FILES FOUND"
+echo -e "----------------\n"
 find . | grep -i $1 | nl
 
-if $2
-	echo -n "Copying files and directories...."
+if [ -n "$2" ]; then
+	echo -e "\nCopying files and directories....\n"
 	find . | grep -i $1 | xargs -I file cp -v -r --parents file --target-directory=$2
-	echo "End search"
+	echo "\nEnd copy\n"
+else
+	echo -e "\nNessuna copia eseguita.\n\n"
 fi
 
-echo -n "----------------------------------"
-echo -n "THE SEARCH IS ENDED. THANK YOU! :)"
-echo -n "----------------------------------"
-exit 1;
+echo -e "----------------------------------"
+echo -e "THE SEARCH IS ENDED. THANK YOU! :)"
+echo -e "----------------------------------\n"
+exit;
