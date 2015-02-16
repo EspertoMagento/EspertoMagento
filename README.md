@@ -1,19 +1,24 @@
 # EspertoMagento
-Questo script permette di ricercare all'interno di un'installazione di Magento una particolare estensione e recuperare tutta la lista dei file. Inoltre permette di copiare i file e le directory trovate all'interno di una cartella.
 
-#1- Installazione
-- Copiare i file .sh nella root di Magento
+#Search & Copy Extension:
+This script allows you to search within a particular installation of Magento extension and retrieve the entire list of files. It also allows you to copy files and directories found within a folder.
+
+#Remove Extension:
+This script allows you to remove a particular Magento extension.
+
+#1- Installation
+- Copy the .sh file in the root of Magento
  
-#2- Comandi
+#2- Commands
 
-Search and copy Extensions:
-- Lanciare il file ./search-extension.sh $extensions_to_search
-- Copiare i files trovati in una directory:
+Search and copy Extension:
+- Run ./search-extension.sh $extensions_to_search
+- Copy files founded within a directory:
 ./search-extension.sh $extensions_to_search $target_directory
 
-Remove Extensions:
+Remove Extension:
 
-- Lanciare il file ./remove-extension.sh $extensions_to_remove
+- Run ./remove-extension.sh $extensions_to_remove
 
 #3- Esempi
 ./search-extension.sh prozoom<br>
