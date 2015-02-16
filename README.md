@@ -1,7 +1,7 @@
 # EspertoMagento
 
 #Search & Copy Extension:
-This script allows you to search within a particular installation of Magento extension and retrieve the entire list of files. It also allows you to copy files and directories found within a folder.
+This script allows you to search an extension within a particular installation of Magento and retrieve the entire list of files. It also allows you to copy files and directories found within a folder.
 
 #Remove Extension:
 This script allows you to remove a particular Magento extension.
@@ -13,7 +13,7 @@ This script allows you to remove a particular Magento extension.
 
 Search and copy Extension:
 - Run ./search-extension.sh $extensions_to_search
-- Copy files founded within a directory:
+- Copy files found within a directory:
 ./search-extension.sh $extensions_to_search $target_directory
 
 Remove Extension:
