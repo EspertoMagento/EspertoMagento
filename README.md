@@ -28,7 +28,7 @@ Remove Extension:
 ./remove-extension.sh $extensions_to_remove
 ```
 
-#3- Esempi
+#3- Examples
 ```
 ./search-extension.sh prozoom
 ./search-extension.sh prozoom ../backup_ext/prozoom/
