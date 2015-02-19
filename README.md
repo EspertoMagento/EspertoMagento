@@ -30,7 +30,7 @@ Remove Extension:
 
 #3- Esempi
 ```
-./search-extension.sh prozoom<br>
+./search-extension.sh prozoom
 ./search-extension.sh prozoom ../backup_ext/prozoom/
 ./remove-extension.sh proozoom
 ```
