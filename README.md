@@ -37,4 +37,4 @@ Remove Extension:
 ./remove-extension.sh proozoom
 ```
 
-[Visit EspertoMagento.it](http://www.espertomagento.it)
+[Visit EspertoMagento.it](http://www.espertomagent.it)
