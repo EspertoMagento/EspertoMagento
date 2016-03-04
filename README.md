@@ -9,7 +9,7 @@ This script allows you to search an extension within a particular installation o
 This script allows you to remove a particular Magento extension.
 
 ##1- Installation
-- Copy the .sh file in the root of Magento
+- Copy the .sh file in the root of Magento or run ```git clone https://github.com/danycrup85/EspertoMagento.git```
  
 ##2- Usage
 
