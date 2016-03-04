@@ -16,11 +16,11 @@ This script allows you to remove a particular Magento extension.
 Search and copy Extension:
 - Run:
 ```
-./search-extension.sh $extensions_to_search
+./search-extension.sh $extensions_to_search $source_directory
 ```
 - Copy files found within a directory:
 ```
-./search-extension.sh $extensions_to_search $target_directory
+./search-extension.sh $extensions_to_search $source_directory $target_directory
 ```
 
 Remove Extension:
@@ -33,7 +33,7 @@ Remove Extension:
 ##3- Examples
 ```
 ./search-extension.sh prozoom
-./search-extension.sh prozoom ../backup_ext/prozoom/
+./search-extension.sh prozoom app/code/ ../backup_ext/prozoom/
 ./remove-extension.sh proozoom
 ```
 
