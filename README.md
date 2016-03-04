@@ -27,7 +27,7 @@ Remove Extension:
 
 - Run:
 ```
-./remove-extension.sh $extensions_to_remove
+./remove-extension.sh $extensions_to_remove $source_directory
 ```
 
 ##3- Examples
@@ -35,6 +35,7 @@ Remove Extension:
 ./search-extension.sh prozoom
 ./search-extension.sh prozoom app/code/ ../backup_ext/prozoom/
 ./remove-extension.sh proozoom
+./remove-extension.sh proozoom app/code/
 ```
 
 [Visit EspertoMagento.it](http://www.espertomagent.it)
