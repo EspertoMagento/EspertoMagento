@@ -3,6 +3,11 @@ namespace Deployer;
 
 require 'recipe/common.php';
 
+task('deploy:staging', function() {
+    writeln('<info>Deploying...</info>');
+    #run('git pull');
+});
+
 // Project name
 set('application', 'magento_utility');
 
@@ -19,7 +24,7 @@ set('shared_dirs', []);
 // Writable dirs by web server 
 set('writable_dirs', []);
 
-set('current_path', function () {
+task('current_path', function () {
     return run('pwd');
 });
 
@@ -29,7 +34,9 @@ host('kontabo')
     ->stage('production')    
     ->set('deploy_path', '/home/deploy/ftp');
     
-
+host('localhost')
+    ->stage('dev')
+    ->set('deploy_path', '/Volumes/MacintoshHD/Library/WebServer/Documents/EspertoMagento');
 // Tasks
 
 desc('Deploy your project');
@@ -46,8 +53,7 @@ task('deploy', [
     'deploy:symlink',
     'deploy:unlock',
     'cleanup',
-    'success',
-    'current_path'
+    'success'
 ]);
 
 // [Optional] If deploy fails automatically unlock.
