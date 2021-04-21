@@ -9,7 +9,10 @@ task('deploy:staging', function() {
 });
 
 // Project name
-set('application', 'magento_utility');
+set('application', 'EspertoMagento');
+
+// Project name
+set('app_dir', '/home/deploy/ftp/scripts');
 
 // Project repository
 set('repository', 'https://github.com/EspertoMagento/EspertoMagento.git');
@@ -37,7 +40,11 @@ host('kontabo')
 host('localhost')
     ->stage('dev')
     ->set('deploy_path', '/Volumes/MacintoshHD/Library/WebServer/Documents/EspertoMagento');
+
 // Tasks
+task( 'deploy:link', function () {
+    run( 'ln -sfn {{deploy_path}}/current {{app_dir}}/{{application}}' );
+} );
 
 desc('Deploy your project');
 task('deploy', [
@@ -51,6 +58,7 @@ task('deploy', [
     //'deploy:vendors',
     'deploy:clear_paths',
     'deploy:symlink',
+    'deploy:link',
     'deploy:unlock',
     'cleanup',
     'success'
